@@ -1,21 +1,127 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: #eee; /* fallback for old browsers */
+      }
+
+      h1 {
+        font-size: 54px;
+      }
+
+      h2 {
+        text-align: center;
+        font-size: 40px;
+        font-weight: 100;
+      }
+
+      .hero {
+        height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-align: center;
+
+        background: #f09819; /* fallback for old browsers */
+        background: -webkit-linear-gradient(
+          to right,
+          #f09819,
+          #ff512f
+        ); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(
+          to bottom,
+          #f09819,
+          #ff512f
+        ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        box-shadow: 0 14px 16px rgba(0, 0, 0, 0.1);
+      }
+
+      nav {
+        position: absolute;
+        top: 20px;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-bottom: 20px;
+      }
+
+      section {
+        padding: 20px;
+        max-width: 800px;
+        margin: 20px auto;
+        font-size: 22px;
+        background: #fff; /* fallback for old browsers */
+        border-radius: 10px;
+        box-shadow: 0 14px 16px rgba(0, 0, 0, 0.1);
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0;
+      }
+    </style>
   </head>
   <body>
-    <nav>
-      <a href="/">Home</a>
-      <a href="/blog/">Blog</a>
-    </nav>
-    <h1>{{ page.title }}</h1>
+    <div class="hero">
+      <nav>
+        <a href="/">Home</a>
+        <a href="/blog/">Blog</a>
+      </nav>
+      <h1>Angus Canoe Club</h1>
+    </div>
+
     <section>
-      {{ content }}
+      <img
+        src="https://lh3.googleusercontent.com/d/1Qql5DKRFv9fsdVb8kv6uMhajEF1vjg4u"
+        alt="Kayaking down a river drop"
+      />
     </section>
-    <footer>
-      &copy; to me
-    </footer>
+
+    <section>
+      <h2>About Us</h2>
+
+      We have been actively paddling as a club since January 2003, having been
+      initially formed by a group of like minded paddlers under an initiative by
+      the then Angus Council Community Education Department, in the guise of
+      Steve Scott. We remain an active club 20 years later, with members ranging
+      from complete beginner to those with over 40 years experience. In the
+      main, we undertake white water kayaking and canoeing, although many of our
+      members also sea kayak and have SUPs.
+    </section>
+
+    <section>
+      <img
+        src="https://www.anguscanoeclub.org.uk/s/img/emotionheader33828914.png?1789419095.920px.516px"
+      />
+    </section>
+
+    <section>
+      <h2>Activities</h2>
+      During the summer months we run monthly club paddles, in addition to
+      weekly paddling sessions aimed to increase skill and confidence on the
+      water. Over the winter, we have use of an indoor pool which provides
+      opportunties to hone paddle skills, learn to roll, or just for a social
+      float around. Our core paddlers often organise peer paddles and are always
+      happy to have others to go adventuring with.
+    </section>
+
+    <section>
+      <h2>Get Involved</h2>
+      Interested in getting involved? We would love to hear from both new and
+      established paddlers - email alan@anguscanoeclub.org.uk to find out more
+      about joining.
+    </section>
+
+    <footer>&copy; to me</footer>
   </body>
 </html>
